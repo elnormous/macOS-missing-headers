@@ -12,7 +12,8 @@ cp /usr/include/machine/endian.h /usr/local/include/endian.h
 
 You will need the GNU sed utility to build the Linux headers (macOS comes with a FreeBSD sed which doesn't have all the needed features). You will need GNU sed also for other GNU projects (like gcc) so let's install it in `/opt/local`.
 
-```curl -L http://ftp.gnu.org/gnu/sed/sed-4.7.tar.xz | tar xJf -
+```console
+curl -L http://ftp.gnu.org/gnu/sed/sed-4.7.tar.xz | tar xJf -
 mkdir build
 cd build
 ../sed-4.7/configure --prefix=/opt/local
