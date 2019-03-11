@@ -7,7 +7,7 @@ Open Terminal and go to the directory where you checked out this repository and 
 
 ```console
 cp *.h /usr/local/include
-cp /usr/include/machine/endian.h /usr/local/include/endian.h
+cp /usr/include/machine/endian.h /usr/local/include
 ```
 
 You will need the GNU sed utility to build the Linux headers (macOS comes with a FreeBSD sed which doesn't have all the needed features). You will need GNU sed also for other GNU projects (like gcc) so let's install it in `/opt/local`.
