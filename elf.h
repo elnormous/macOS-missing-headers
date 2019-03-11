@@ -1,10 +1,3 @@
-/* This is the original elf.h file from the GNU C Library; I only removed
-   the inclusion of feature.h, which is not needed.
-
-   On OSX, simply copy the file to /usr/local/include/. 
-
-   Mathias Lafeldt <mathias.lafeldt@gmail.com> */
-
 /* This file defines standard ELF types, structures, and macros.
    Copyright (C) 1995-2003,2004,2005,2006,2007,2008,2009,2010,2011
 	Free Software Foundation, Inc.
