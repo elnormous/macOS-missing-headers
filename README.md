@@ -3,7 +3,14 @@ Missing headers for the Linux kernel header installation.
 
 ## Installation
 
-Open Terminal and go to the directory where you checked out this repository and execute the following commands to copy the needed header files to `/usr/include`:
+First make sure that you have C headers installed
+
+```console
+xcode-select --install
+sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
+```
+
+Go to the directory where you checked out this repository and execute the following commands to copy the needed header files to `/usr/include`:
 
 ```console
 cp *.h /usr/local/include
