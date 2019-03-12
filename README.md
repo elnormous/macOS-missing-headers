@@ -1,12 +1,17 @@
 # macOS missing headers
-Missing headers for the Linux kernel header installation.
+Use this repository to install Linux headers on macOS if needed (for example when building glibc).
 
 ## Installation
 
-First make sure that you have C headers installed
+If you don't have already, install the Xcode command-line tools.
 
 ```console
 xcode-select --install
+```
+
+Make sure that you have C headers installed in `/usr/include`. If not then execute this command:
+
+```console
 sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
 ```
 
