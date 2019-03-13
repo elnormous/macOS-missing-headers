@@ -39,10 +39,10 @@ Now download the Linux kernel source.
 curl -L https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-5.0.tar.gz | tar xzf -
 ```
 
-The last things we need to do are adding the `/opt/sed/bin` to the path (which contains the GNU sed) and building the headers (replace the `/opt/sed/include` with the install location).
+The last things we need to do are adding the `/opt/sed/bin` to the path (which contains the GNU sed) and building the headers (replace the `/opt/linux/include` with the install location).
 
 ```console
 export PATH=/opt/sed/bin:${PATH}
 cd linux-5.0
-sudo make headers_install INSTALL_HDR_PATH=/opt/sed/include
+sudo make headers_install INSTALL_HDR_PATH=/opt/linux/include
 ```
