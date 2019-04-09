@@ -44,5 +44,5 @@ The last things we need to do are adding the `/opt/sed/bin` to the path (which c
 ```console
 export PATH=/opt/sed/bin:${PATH}
 cd linux-5.0
-sudo make headers_install INSTALL_HDR_PATH=/opt/linux/include
+sudo make headers_install INSTALL_HDR_PATH=/opt/linux
 ```
